@@ -4,9 +4,9 @@ import Main from './components/MainComponent';
 
 function App() {
 	return (
-		<div className="App">
+		<main className="App">
 			<Main />
-		</div>
+		</main>
 	);
 }
 

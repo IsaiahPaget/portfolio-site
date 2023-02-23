@@ -2,10 +2,10 @@ import react, { Component } from "react";
 import NavBar from "./NavBarComponent";
 import "../index.css";
 import Logo from "./LogoComponent.jsx";
-import CaseStudyCards from "./CaseStudyCardsComponent.jsx";
+import CertCards from "./CertCardsComponent.jsx";
 import ContactModal from "./ContactModalComponent.jsx";
 import { motion, AnimatePresence } from "framer-motion";
-
+import Projects from "./ProjectsComponent";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -33,25 +33,25 @@ const db = getFirestore(firebase);
 let colourChange = false;
 let removeColorTimeout;
 
-document.addEventListener("DOMContentLoaded", () => {
-	document.addEventListener("mousemove", (e) => {
-		if (!colourChange) {
-			document.getElementById("navBarBorder").classList.add("colour-rotate");
-			colourChange = true;
-		}
-		clearTimeout(removeColorTimeout);
-		removeColorTimeout = setTimeout(() => {
-			document.getElementById("navBarBorder").classList.remove("colour-rotate");
-			colourChange = false;
-		}, 2000);
-	});
+// document.addEventListener("DOMContentLoaded", () => {
+// 	document.addEventListener("mousemove", (e) => {
+// 		if (!colourChange) {
+// 			document.getElementById("bigHeadshot").classList.add("colour-rotate");
+// 			colourChange = true;
+// 		}
+// 		clearTimeout(removeColorTimeout);
+// 		removeColorTimeout = setTimeout(() => {
+// 			document.getElementById("bigHeadshot").classList.remove("colour-rotate");
+// 			colourChange = false;
+// 		}, 2000);
+// 	});
 
-	document.addEventListener("mouseout", (e) => {
-		clearTimeout(removeColorTimeout);
-		document.getElementById("navBarBorder").classList.remove("colour-rotate");
-		colourChange = false;
-	});
-});
+// 	document.addEventListener("mouseout", (e) => {
+// 		clearTimeout(removeColorTimeout);
+// 		document.getElementById("bigHeadshot").classList.remove("colour-rotate");
+// 		colourChange = false;
+// 	});
+// });
 
 class Main extends Component {
 	constructor(props) {
@@ -77,9 +77,11 @@ class Main extends Component {
 			const body = await event.target.elements.message.value;
 
 			const docRef = await addDoc(collection(db, "mail"), {
-				name: name,
-				email: email,
-				body: body,
+				to: "isaiahpaget@gmail.com",
+				message: {
+					subject: "Portfolio",
+					html: `<h1>${name},</h1><p>${body},</p><footer>${email}</footer>`,
+				},
 			});
 			this.onModalClick();
 		} catch (e) {
@@ -96,26 +98,29 @@ class Main extends Component {
 	}
 	render() {
 		return (
-			<div className='dark:bg-light-black min-h-screen' id='contact'>
+			<section
+				className='bg-gradient-to-r from-whitesmoke dark:from-light-black dark:to-gray-dark min-h-screen'
+				id='contact'
+			>
+				<div className="cross-hatch">
 				<NavBar onModalClick={this.onModalClick} />
-				<div id='navBarBorder' className='bg-secondary h-1 drop-shadow-xl'></div>
-				<Logo />
-				<div className='bg-alert'>
-					<div className='wavy-upright'></div>
-					<div className='bg-alert'>
-						<CaseStudyCards />
-					</div>
-					<div className='wavy-downright'></div>
+					<Logo />
+					<Projects />
+					<section className=''>
+						<div className=''>
+							<CertCards />
+						</div>
+					</section>
+					<AnimatePresence initial={false} mode='wait' onExitComplete={() => null}>
+						{this.state.modalOpen && (
+							<ContactModal
+								handlesubmit={this.handlesubmit}
+								onModalClick={this.onModalClick}
+							/>
+						)}
+					</AnimatePresence>
 				</div>
-				<AnimatePresence initial={false} mode='wait' onExitComplete={() => null}>
-					{this.state.modalOpen && (
-						<ContactModal
-							handlesubmit={this.handlesubmit}
-							onModalClick={this.onModalClick}
-						/>
-					)}
-				</AnimatePresence>
-			</div>
+			</section>
 		);
 	}
 }

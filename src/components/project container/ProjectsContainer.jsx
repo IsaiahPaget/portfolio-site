@@ -23,14 +23,18 @@ function ProjectsContainer(props) {
 					PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS
 				</h3>
 			</div>
-			<section onMouseLeave={handleHidden} className='bg-opacity-0 projects overflow-hidden relative grid grid-cols-2'>
+			<section
+				onMouseLeave={handleHidden}
+				className='bg-opacity-0 projects overflow-hidden relative grid grid-cols-2'
+			>
 				<img
 					id='project_img'
-					className={`price absolute aspect-video object-cover object-top w-full ${
+					className={`price absolute aspect-video object-cover object-top h-full ${
 						hidden ? "hidden" : null
 					}`}
 					src={source}
 				/>
+				
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Wizard Dungeon"}
@@ -63,6 +67,8 @@ function ProjectsContainer(props) {
 					route={"/"}
 					description={""}
 				/>
+				<div className='z-10 bg-opacity-0 p-10 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
+				<div className='z-10 bg-opacity-0 p-10 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
 			</section>
 		</div>
 	);

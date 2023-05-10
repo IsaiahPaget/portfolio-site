@@ -3,7 +3,7 @@ import "./App.css";
 import FooterComponent from "./components/footer/FooterComponent";
 import HeaderComponent from "./components/header/HeaderComponent";
 import HeroComponent from "./components/hero/HeroComponent";
-import { cypherEffect, dragScrolling } from "./events";
+import { cypherEffect, dragScrolling, observer } from "./events";
 import CharactersComponent from "./components/charactersgif/CharactersComponent";
 import SkillsContainerComponent from "./components/skills container/SkillsContainerComponent";
 import ProjectsContainer from "./components/project container/ProjectsContainer";
@@ -19,6 +19,7 @@ function App() {
 	useEffect(() => {
 		cypherEffect();
 		dragScrolling();
+		observer();
 	}, []);
 
 	return (

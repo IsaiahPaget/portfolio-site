@@ -9,6 +9,7 @@ body {
 	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
 		"Liberation Mono", "Courier New", monospace;
 	color: #404d56;
+	overflow-x: hidden;
 }
 
 html {
@@ -16,16 +17,16 @@ html {
 }
 
 * {
-	cursor: url("/public/images/crosshair.png") 32 32, auto;
+	cursor: url("/images/crosshair.png") 32 32, auto;
 }
 
 .scroll * :not(a, button) {
-	cursor: url("/public/images/crosshair_grab.png") 32 32, auto;
+	cursor: url("/images/crosshair_grab.png") 32 32, auto;
 }
 
 a,
 button {
-	cursor: url("/public/images/crosshair_select.png") 32 32, auto;
+	cursor: url("/images/crosshair_select.png") 32 32, auto;
 }
 
 h1,
@@ -64,4 +65,18 @@ textarea {
 
 .background-solid-gadient {
 	background: linear-gradient(180deg, #404d56 50%, #beb2a9 50%);
+}
+
+.hidden-before-scroll {
+	opacity: 0;
+	filter: blur(2px);
+	transform: translateX(50%);
+	transition: all 1s;
+}
+
+.show-on-scroll {
+	opacity: 1;
+	filter: blur(0px);
+	transform: translateX(0);
+
 }

@@ -1,0 +1,16 @@
+.rotate {
+	animation: banner-rotate 10s alternate infinite;
+}
+
+@keyframes banner-rotate {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-10%);
+	}
+}
+
+.projects img {
+    filter: brightness(75%);
+}

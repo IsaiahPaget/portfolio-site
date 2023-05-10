@@ -1,0 +1,3 @@
+.parent:hover > p {
+    display: block;
+}

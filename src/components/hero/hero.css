@@ -1,3 +1,6 @@
-.hero {
-    font-size: 20rem;
+@media (min-width: 976px) {
+    
+    .hero {
+        font-size: 20rem;
+    }
 }

@@ -58,9 +58,25 @@ export function dragScrolling() {
 export function observer() {
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
-			console.log(entry);
 			if (entry.isIntersecting) {
-				entry.target.classList.add("show-on-scroll");
+				if (entry.target.dataset.value === "skill") {
+					const elements = document.querySelectorAll("[data-value=skill]");
+					elements.forEach((element) => {
+						element.classList.add("show-on-scroll");
+					});
+				}
+				if (entry.target.dataset.value === "quote") {
+					const elements = document.querySelectorAll("[data-value=quote]");
+					elements.forEach((element) => {
+						element.classList.add("show-on-scroll");
+					});
+				}
+				if (entry.target.dataset.value === "cert") {
+					const elements = document.querySelectorAll("[data-value=cert]");
+					elements.forEach((element) => {
+						element.classList.add("show-on-scroll");
+					});
+				}
 			}
 		});
 	});

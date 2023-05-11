@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import FooterComponent from "./components/footer/FooterComponent";
 import HeaderComponent from "./components/header/HeaderComponent";
@@ -16,6 +16,14 @@ import { analytics } from "./firebase";
 function App() {
 	analytics;
 
+	const [contactMessage, setContactMessage] = useState("Contact Me!")
+	const [submitted, setSubmitted] = useState(false);
+	
+	const handleSubmit = () => {
+		setContactMessage("Thanks For Connecting!")
+		setSubmitted(true);
+	}
+
 	useEffect(() => {
 		cypherEffect();
 		dragScrolling();
@@ -23,7 +31,7 @@ function App() {
 	}, []);
 
 	return (
-		<>
+		<main>
 			<HeaderComponent />
 			<HeroComponent />
 			<CharactersComponent />
@@ -31,13 +39,13 @@ function App() {
 			<ProjectsContainer />
 			<QuoteComponent />
 			<div className='background-solid-gadient'>
-				<h3 className='sticky top-80 text-center text-9xl'>Contact Me!</h3>
+				<h3 className='sticky top-80 pointer-events-none text-center text-9xl'>{contactMessage}</h3>
 				<CertificationComponent />
-				<ContactComponent />
+				<ContactComponent submitted={submitted} handleSubmit={handleSubmit} />
 			</div>
 			<ThankYouComponent name={"isaiah"} />
 			<FooterComponent />
-		</>
+		</main>
 	);
 }
 

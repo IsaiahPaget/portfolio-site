@@ -3,7 +3,7 @@ import "./skill.css";
 
 function SkillComponent({ skill, description, image, alt }) {
 	return (
-		<article className='border flex flex-col card p-3 h-96 bg-pink'>
+		<article data-value="skill" className='border flex flex-col hidden-before-scroll card p-3 h-96 bg-pink'>
 			<header className='text-3xl flex-1'>{skill}</header>
 			<div className="relative flex-1">
 				<pre>{description}</pre>

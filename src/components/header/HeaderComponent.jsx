@@ -11,7 +11,7 @@ function HeaderComponent(props) {
 	}
 
 	return (
-		<nav className='z-20 fixed w-full flex gap-8 flex-row p-9'>
+		<nav className='z-20 sticky top-0 w-full flex lg:gap-8 flex-row p-9'>
 			<a
 				onClick={scrollToTop}
 				tag='cypher'
@@ -26,7 +26,7 @@ function HeaderComponent(props) {
 			<a
 				tag='cypher'
 				data-value='Github'
-				className='text-2xl p-1'
+				className='text-2xl p-1 max-sm:hidden'
 				href='https://github.com/isaiahpaget'
 			>
 				Github

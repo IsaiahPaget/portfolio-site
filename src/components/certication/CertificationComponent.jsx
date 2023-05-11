@@ -3,17 +3,17 @@ import "./certification.css";
 
 function CertificationComponent(props) {
 	return (
-		<section>
+		<section className="">
 			<div className='bg-gray-dark text-gray-light flex justify-center'>
 				<h2 className='text-9xl relative right-32'>Certification</h2>
 			</div>
-			<div className="bg-gray-dark">
-				<div
-					tag='scroll'
-					className='scroll text-gray-dark flex pl-12 overflow-x-scroll hidden-before-scroll p-10 gap-8'
-				>
+			<div className='bg-gray-dark'>
+				<div tag='scroll' className='scroll z-20 text-gray-dark flex pl-12 p-10 gap-8'>
 					<div className='border border-gray-light card h-96 relative w-64'></div>
-					<article className='border z-10 border-pink flex flex-col card p-3 h-96 bg-pink'>
+					<article
+						data-value='cert'
+						className='border border-pink flex flex-col card p-3 h-96 bg-pink hidden-before-scroll'
+					>
 						<header className='text-3xl flex-1'>Front-End Developer, Meta</header>
 						<div className='relative flex-1'>
 							<p>Advanced React</p>
@@ -35,7 +35,10 @@ function CertificationComponent(props) {
 							</button>
 						</div>
 					</article>
-					<article className='border z-10 border-pink flex flex-col card p-3 h-96 bg-pink'>
+					<article
+						data-value='cert'
+						className='border border-pink flex flex-col card p-3 h-96 bg-pink hidden-before-scroll'
+					>
 						<header className='text-3xl flex-1'>Full-Stack Developer, Coursera</header>
 						<div className='relative flex-1'>
 							<p>React and React Native</p>
@@ -57,7 +60,10 @@ function CertificationComponent(props) {
 							</button>
 						</div>
 					</article>
-					<article className='border z-10 border-pink flex flex-col card p-3 h-96 bg-pink'>
+					<article
+						data-value='cert'
+						className='border border-pink flex flex-col card p-3 h-96 bg-pink hidden-before-scroll'
+					>
 						<header className='text-3xl flex-1'>
 							Introduction to Computer Science, HarvardX
 						</header>
@@ -81,7 +87,10 @@ function CertificationComponent(props) {
 							</button>
 						</div>
 					</article>
-					<article className='border z-10 border-pink flex flex-col card p-3 h-96 bg-pink'>
+					<article
+						data-value='cert'
+						className='border border-pink flex flex-col card p-3 h-96 bg-pink hidden-before-scroll'
+					>
 						<header className='text-3xl flex-1'>More in Progress ...</header>
 						<div className='relative flex-1'>
 							<button className='border w-52 p-3 bottom-0 right-0 absolute'>

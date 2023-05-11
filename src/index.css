@@ -9,11 +9,11 @@ body {
 	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
 		"Liberation Mono", "Courier New", monospace;
 	color: #404d56;
-	overflow-x: hidden;
 }
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 * {
@@ -22,6 +22,7 @@ html {
 
 .scroll * :not(a, button) {
 	cursor: url("/images/crosshair_grab.png") 32 32, auto;
+
 }
 
 a,
@@ -70,7 +71,7 @@ textarea {
 .hidden-before-scroll {
 	opacity: 0;
 	filter: blur(2px);
-	transform: translateX(50%);
+	transform: translateX(100%);
 	transition: all 1s;
 }
 

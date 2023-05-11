@@ -4,7 +4,7 @@ import './skillscontainer.css'
 
 function SkillsContainerComponent(props) {
 	return (
-		<section tag="scroll" className="scroll flex pl-12 overflow-x-scroll p-10 gap-8 hidden-before-scroll">
+		<section tag="scroll" className="scroll flex flex-col lg:flex-row pl-12 p-10 gap-8">
 			<article className="border card h-96 relative w-64 bg-gray-light">
                 <h3 className=" text-3xl p-3">_SKILLS INCLUDE BUT AREN'T LIMITED TO = () =&gt; </h3>
             </article>

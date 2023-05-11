@@ -34,38 +34,40 @@ function ProjectsContainer(props) {
 					}`}
 					src={source}
 				/>
-				
+
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Wizard Dungeon"}
 					data={"/images/wizardbumgeon.png"}
-					route={"/"}
+					route={"https://github.com/IsaiahPaget/Wizard-Bumgeon"}
 					description={
-						"The first title from a indie game studio that my friends and I have started. Since starting this project I have learned so much about object oriented programming, Unity and C#. I have learn't what it means to have good code architecture, and I have begun to realize the important of certain desgin patterns. Since overhauling the code base to align with the SOLID code principles I have seen a major increase in productivity."
+						"First Title from my indie game studio!\n\n/ Unity\n/ C#\n/ Object/Oriented Programming\n/ SOLID code principles\n/ Git\n/ Collaboration"
 					}
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Price Compass"}
 					data={"/images/pricecompasspage.png"}
-					route={"/"}
+					route={"https://pricecompass.one"}
 					description={
-						"I like the idea of finding the best deal, but I am too lazy to check the internet everyday until I find it. So I made an app that does it for me. This app allows users to add key words to their list and the app will check Google shopping everyday at 12pm PST for the best deals. I made this using React, Firebase, and the OpenAI GPT-3 API, along with some web scraping tools."
+						"Full-stack web app that tracks prices on Google Shopping!\n\n/ React\n/ OpenAI GPT/3 API\n/ Cloud Functions\n/ Authentication\n/ Web Security\n/ Data Modeling"
 					}
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Bachelor Suite Skateboards"}
 					data={"/images/bachelorsuitepage.png"}
-					route={"/"}
-					description={""}
+					route={"https://bachelorsuitestore.com"}
+					description={
+						"E-commerce website allowing Bachelor Suite Skateboards to reach new customers!\n\n/ UX/UI Design\n/ Easy To Use Back End\n/ Customer Satisfaction\n/ Replicating Figma Designs\n/ Web Security\n/ Google Anayltics"
+					}
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Arc Liquor Store"}
 					data={"/images/arcliquorpage.png"}
-					route={"/"}
-					description={""}
+					route={"https://arcliquorkelowna.web.app"}
+					description={"Front-End project, I learned a whole lot about React and Firebase!\n\n/ React\n/ Sass\n/ Boot Strap\n/ UX/UI Design\n/ Security\n/ Firebase"}
 				/>
 				<div className='z-10 bg-opacity-0 p-10 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
 				<div className='z-10 bg-opacity-0 p-10 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>

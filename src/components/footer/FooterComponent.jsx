@@ -16,7 +16,7 @@ function FooterComponent(props) {
 
 
     return (
-        <footer className='z-20 p-10 flex gap-4 flex-col fixed bottom-0'>
+        <footer className='z-20 p-10 flex gap-4 flex-col fixed bottom-0 max-md:hidden'>
             <ButtonComponent scrollFunction={scrollToSkills} name={"/ skills"}/>
             <ButtonComponent scrollFunction={scrollToProjects} name={"/ projects"}/>
             <ButtonComponent scrollFunction={scrollToCerts} name={"/ certification"}/>

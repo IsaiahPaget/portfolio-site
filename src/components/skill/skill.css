@@ -1,3 +1,5 @@
-.card {
-    min-width: 24rem;
+@media (min-width: 976px) {
+	.card {
+		min-width: 24rem;
+	}
 }

@@ -12,7 +12,10 @@ function ProjectsContainer(props) {
 
 	const handleChangePhoto = (e) => {
 		setHidden(false);
-		setSource(e.target.dataset.value);
+		setSource((prev) => {
+			prev = e.target.getAttribute('id');
+			return prev;
+		});
 	};
 
 	return (
@@ -24,12 +27,13 @@ function ProjectsContainer(props) {
 				</h3>
 			</div>
 			<section
+				id='projects'
 				onMouseLeave={handleHidden}
 				className='bg-opacity-0 projects relative grid grid-cols-1 md:grid-cols-2'
 			>
 				<img
 					id='project_img'
-					className={`price absolute aspect-video object-cover object-top h-full max-lg:hidden ${
+					className={`price absolute aspect-video object-cover object-top h-full ${
 						hidden ? "hidden" : null
 					}`}
 					src={source}
@@ -37,7 +41,7 @@ function ProjectsContainer(props) {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Wizard Dungeon"}
-					data={"/images/wizardbumgeon.png"}
+					id={"/images/wizardbumgeon.png"}
 					route={"https://github.com/IsaiahPaget/Wizard-Bumgeon"}
 					title={"First Title from my indie game studio!"}
 				>
@@ -51,7 +55,7 @@ function ProjectsContainer(props) {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Price Compass"}
-					data={"/images/pricecompasspage.png"}
+					id={"/images/pricecompasspage.png"}
 					route={"https://pricecompass.one"}
 					title={"Full-stack web app that tracks prices on Google Shopping!"}
 				>
@@ -65,7 +69,7 @@ function ProjectsContainer(props) {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Bachelor Suite Skateboards"}
-					data={"/images/bachelorsuitepage.png"}
+					id={"/images/bachelorsuitepage.png"}
 					route={"https://bachelorsuitestore.com"}
 					title={
 						"E-commerce website allowing Bachelor Suite Skateboards to reach new customers!"
@@ -81,7 +85,7 @@ function ProjectsContainer(props) {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Arc Liquor Store"}
-					data={"/images/arcliquorpage.png"}
+					id={"/images/arcliquorpage.png"}
 					route={"https://arcliquorkelowna.web.app"}
 					title={"Front-End project, I learned a whole lot about React and Firebase!"}
 				>
@@ -92,8 +96,8 @@ function ProjectsContainer(props) {
 					<p>/Security</p>
 					<p>/Firebase</p>
 				</ProjectComponent>
-				<div className='z-10 bg-opacity-0 max-lg:hidden p-10 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
-				<div className='z-10 bg-opacity-0 max-lg:hidden p-10 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
+				<div className='z-10 bg-opacity-0 max-lg:hidden p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
+				<div className='z-10 bg-opacity-0 max-lg:hidden p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
 			</section>
 		</div>
 	);

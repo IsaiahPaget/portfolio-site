@@ -26,6 +26,7 @@ html {
 
 a,
 button,
+i,
 .crosshair {
 	cursor: url("/images/crosshair_select.png") 32 32, auto;
 }

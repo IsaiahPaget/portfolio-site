@@ -6,8 +6,7 @@ function ProjectComponent(props) {
 	return (
 		<article
 			onMouseEnter={(e) => props.handleChangePhoto(e)}
-			onClick={(e) => props.handleChangePhoto(e)}
-			data-value={props.data}
+			id={props.id}
 			className='z-10 bg-opacity-0 p-4 lg:p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light project parent group gap-4 lg:gap-8 flex flex-col'
 		>
 			<h3 className='text-3xl flex-1'>{props.project}</h3>

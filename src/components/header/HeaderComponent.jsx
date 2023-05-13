@@ -1,13 +1,13 @@
 import React from "react";
 
 function HeaderComponent(props) {
-
 	function scrollToContact() {
-		window.scrollTo(0, 4750)
+		const contact = document.getElementById("contact");
+		contact.scrollIntoView();
 	}
 
 	function scrollToTop() {
-		window.scrollTo(0, 0)
+		window.scrollTo(0, 0);
 	}
 
 	return (
@@ -17,10 +17,17 @@ function HeaderComponent(props) {
 				tag='cypher'
 				data-value='Isaiah Paget'
 				className='text-2xl mr-auto rounded-sm p-1 bg-gray-light'
+				href='/'
 			>
 				Isaiah Paget
 			</a>
-			<a onClick={scrollToContact} tag='cypher' data-value='Contact' className='text-2xl p-1'>
+			<a
+				onClick={scrollToContact}
+				tag='cypher'
+				data-value='Contact'
+				className='text-2xl p-1'
+				href='/'
+			>
 				Contact
 			</a>
 			<a

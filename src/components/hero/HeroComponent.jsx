@@ -3,9 +3,9 @@ import "./hero.css";
 
 function HeroComponent(props) {
 	return (
-		<section className='flex flex-col lg:flex-row lg:gap-44 gap-8 p-10'>
+		<section className='flex flex-col lg:flex-row lg:gap-44 gap-8 p-8'>
 			<div className="flex-2/3">
-				<img src='/images/banner.png' />
+				<img src='/images/banner.png' alt="Hello!"/>
 			</div>
 			<div className='flex-1/3'>
 				<h3 className='text-3xl text-pink'>_About Me</h3>

@@ -8,7 +8,7 @@ function ButtonComponent(props) {
 				if (props.Function()) props.Function(e); else null;
 			}}
             role="button"
-			className={`lg:w-40 crosshair p-3 border text-left duration-300 ${props.className}`}
+			className={`lg:w-40 crosshair p-3 border text-left duration-300 pointer-events-auto ${props.className}`}
 			tag='cypher'
 			data-value={props.name}
 			href={props.href}

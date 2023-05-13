@@ -4,17 +4,20 @@ import ButtonComponent from "../button/ButtonComponent";
 
 function FooterComponent(props) {
 	function scrollToSkills() {
-		window.scrollTo(0, 960);
+		const skills = document.getElementById("skills");
+		skills.scrollIntoView()
 	}
 	function scrollToProjects() {
-		window.scrollTo(0, 1870);
+		const projects = document.getElementById("projects");
+		projects.scrollIntoView()
 	}
 	function scrollToCerts() {
-		window.scrollTo(0, 3790);
+		const certs = document.getElementById("certificates");
+		certs.scrollIntoView()
 	}
 
 	return (
-		<footer className='z-50 lg:p-10 flex lg:gap-4 lg:flex-col w-full fixed bottom-0'>
+		<footer className='z-50 lg:p-8 flex lg:gap-4 lg:flex-col pointer-events-none w-full fixed bottom-0'>
 			<ButtonComponent
 				className={
 					"hover:border-gray-dark hover:bg-gray-light hover:text-gray-dark text-gray-light bg-gray-dark flex-1"

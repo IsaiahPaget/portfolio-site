@@ -5,9 +5,9 @@ import ScrollingCardComponent from "../scrolling card container/ScrollingCardCom
 
 function SkillsContainerComponent(props) {
 	return (
-		<ScrollingCardComponent>
-			<article className='border h-72 w-full card lg:h-96 relative bg-gray-light'>
-				<h3 className=' text-3xl p-3'>
+		<ScrollingCardComponent id={"skills"}>
+			<article data-value="skill" className='observer border h-72 w-full card lg:h-96 relative bg-gray-light'>
+				<h3 className=' text-3xl p-4'>
 					_SKILLS INCLUDE BUT AREN'T LIMITED TO = () =&gt;
 				</h3>
 			</article>

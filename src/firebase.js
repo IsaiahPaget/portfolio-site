@@ -23,7 +23,6 @@ const db = getFirestore(app);
 export const analytics = getAnalytics(app);
 
 export async function sendEmail(event) {
-	event.preventDefault();
 
 	const name = await event.target.elements.name.value;
 	const email = await event.target.elements.email.value;

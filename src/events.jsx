@@ -81,7 +81,7 @@ export function observer() {
 		});
 	});
 
-	const hiddenElements = document.querySelectorAll(".hidden-before-scroll");
+	const hiddenElements = document.querySelectorAll(".observer");
 	if (hiddenElements) {
 		hiddenElements.forEach((el) => observer.observe(el));
 	}

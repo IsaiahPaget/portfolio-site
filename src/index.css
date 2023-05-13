@@ -22,11 +22,11 @@ html {
 
 .scroll * :not(a, button) {
 	cursor: url("/images/crosshair_grab.png") 32 32, auto;
-
 }
 
 a,
-button {
+button,
+.crosshair {
 	cursor: url("/images/crosshair_select.png") 32 32, auto;
 }
 
@@ -36,7 +36,8 @@ h3,
 a,
 header,
 input,
-textarea {
+textarea,
+button {
 	font-family: "VT323", monospace;
 }
 
@@ -64,6 +65,10 @@ textarea {
 	color: #00d0d0;
 }
 
+.project {
+	min-height: 420px;
+}
+
 .background-solid-gadient {
 	background: linear-gradient(180deg, #404d56 50%, #beb2a9 50%);
 }
@@ -79,5 +84,23 @@ textarea {
 	opacity: 1;
 	filter: blur(0px);
 	transform: translateX(0);
+}
 
+.scroll::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		min-width: 24rem;
+	}
+}
+
+.card {
+	min-height: 22rem;
+}
+
+img {
+	display: block;
 }

@@ -1,27 +1,28 @@
 import React from "react";
 import "./project.css";
+import ButtonComponent from "../button/ButtonComponent";
 
 function ProjectComponent(props) {
 	return (
 		<article
 			onMouseEnter={(e) => props.handleChangePhoto(e)}
+			onClick={(e) => props.handleChangePhoto(e)}
 			data-value={props.data}
-			className='z-10 bg-opacity-0 p-10 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'
+			className='z-10 bg-opacity-0 p-4 lg:p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light project parent group gap-4 lg:gap-8 flex flex-col'
 		>
-			<div className='parent flex flex-col h-full'>
-				<h3 className='text-3xl mb-8 flex-1'>{props.project}</h3>
-				<pre className=' text-gray-dark flex-1 hidden'>{props.description}</pre>
-				<button className='flex flex-col items-end'>
-					<a
-						href={props.route}
-						target='_blank'
-						data-value='See More'
-						tag='cypher'
-						className='p-3 border'
-					>
-						See More
-					</a>
-				</button>
+			<h3 className='text-3xl flex-1'>{props.project}</h3>
+			<div className='flex flex-col gap-4 lg:gap-8 flex-1 '>
+				<p className=' text-gray-dark group-hover:block hidden'>{props.title}</p>
+				<div className=' text-gray-dark group-hover:block hidden'>{props.children}</div>
+			</div>
+			<div className='flex justify-end'>
+				<ButtonComponent
+					href={props.route}
+					name={"See More"}
+					className={
+						" group-hover:border-gray-dark group-hover:text-gray-dark border-blue text-blue"
+					}
+				/>
 			</div>
 		</article>
 	);

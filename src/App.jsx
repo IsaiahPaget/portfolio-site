@@ -16,13 +16,13 @@ import { analytics } from "./firebase";
 function App() {
 	analytics;
 
-	const [contactMessage, setContactMessage] = useState("Contact Me!")
+	const [contactMessage, setContactMessage] = useState("Contact Me!");
 	const [submitted, setSubmitted] = useState(false);
-	
+
 	const handleSubmit = () => {
-		setContactMessage("Thanks For Connecting!")
+		setContactMessage("Thanks For Connecting!");
 		setSubmitted(true);
-	}
+	};
 
 	useEffect(() => {
 		cypherEffect();
@@ -31,21 +31,27 @@ function App() {
 	}, []);
 
 	return (
-		<main>
+		<>
 			<HeaderComponent />
-			<HeroComponent />
-			<CharactersComponent />
-			<SkillsContainerComponent />
-			<ProjectsContainer />
-			<QuoteComponent />
-			<div className='background-solid-gadient'>
-				<h3 className='sticky top-80 pointer-events-none text-center text-9xl'>{contactMessage}</h3>
-				<CertificationComponent />
+			<main>
+				<HeroComponent />
+				<CharactersComponent />
+				<SkillsContainerComponent />
+				<ProjectsContainer />
+				<div className="background-solid-gadient">
+					<h3 className='sticky top-80 pointer-events-none text-center text-6xl md:text-9xl'>
+						{contactMessage}
+					</h3>
+					<div className='bg-gray-dark'>
+						<QuoteComponent />
+						<CertificationComponent />
+					</div>
+					<div className='h-96 pointer-events-none'></div>
+				</div>
 				<ContactComponent submitted={submitted} handleSubmit={handleSubmit} />
-			</div>
-			<ThankYouComponent name={"isaiah"} />
+			</main>
 			<FooterComponent />
-		</main>
+		</>
 	);
 }
 

@@ -1,13 +1,18 @@
 import React from "react";
 import "./skill.css";
 
-function SkillComponent({ skill, description, image, alt }) {
+function SkillComponent({ skill, children, image, alt }) {
 	return (
-		<article data-value="skill" className='border flex flex-col hidden-before-scroll card p-3 h-96 bg-pink'>
+		<article
+			data-value='skill'
+			className='border flex flex-col card hidden-before-scroll p-3 w-full lg:h-96 h-full bg-pink'
+		>
 			<header className='text-3xl flex-1'>{skill}</header>
-			<div className="relative flex-1">
-				<pre>{description}</pre>
-				<img className=" bottom-0 right-0 absolute aspect-square h-32" alt={alt} src={image}/>
+			<div className='flex-1 md:flex'>
+				<div className="flex-1">{children}</div>
+				<div className="flex flex-1 justify-center md:justify-end md:items-end">
+					<img className='aspect-square max-h-36' alt={alt} src={image} />
+				</div>
 			</div>
 		</article>
 	);

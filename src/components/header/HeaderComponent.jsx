@@ -3,7 +3,7 @@ import React from "react";
 function HeaderComponent(props) {
 
 	function scrollToContact() {
-		window.scrollTo(0, 4650)
+		window.scrollTo(0, 4750)
 	}
 
 	function scrollToTop() {

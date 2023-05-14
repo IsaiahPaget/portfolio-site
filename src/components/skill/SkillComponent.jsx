@@ -5,7 +5,7 @@ function SkillComponent({ skill, children, image, alt }) {
 	return (
 		<article
 			data-value='skill'
-			className='border observer flex flex-col card hidden-before-scroll p-4 w-full lg:h-96 h-full bg-pink'
+			className='border observer flex flex-col card hidden-before-scroll p-3 w-full lg:h-96 h-full bg-pink'
 		>
 			<header className='text-3xl flex-1'>{skill}</header>
 			<div className='flex-1 md:flex'>

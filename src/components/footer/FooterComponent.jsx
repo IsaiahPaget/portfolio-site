@@ -17,7 +17,7 @@ function FooterComponent(props) {
 	}
 
 	return (
-		<footer className='z-50 lg:p-8 flex lg:gap-4 lg:flex-col pointer-events-none w-full fixed bottom-0'>
+		<footer className='z-50 lg:p-8 flex lg:gap-3 lg:flex-col pointer-events-none w-full fixed bottom-0'>
 			<ButtonComponent
 				className={
 					"hover:border-gray-dark hover:bg-gray-light hover:text-gray-dark text-gray-light bg-gray-dark flex-1"

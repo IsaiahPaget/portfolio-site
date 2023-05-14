@@ -17,7 +17,7 @@ function HeaderComponent(props) {
 				onClick={scrollToTop}
 				tag='cypher'
 				data-value='Isaiah Paget'
-				className='text-2xl mr-auto rounded-sm p-1 bg-gray-light pointer-events-auto'
+				className='font-bold mr-auto rounded-sm p-3 border bg-gray-light pointer-events-auto'
 			>
 				Isaiah Paget
 			</a>
@@ -26,7 +26,7 @@ function HeaderComponent(props) {
 				onClick={scrollToContact}
 				tag='cypher'
 				data-value='Contact'
-				className='text-2xl p-1 pointer-events-auto'
+				className='font-bold p-3 pointer-events-auto'
 			>
 				Contact
 			</a>
@@ -34,7 +34,7 @@ function HeaderComponent(props) {
 				role='button'
 				tag='cypher'
 				data-value='Github'
-				className='text-2xl p-1 max-sm:hidden pointer-events-auto'
+				className='font-bold p-3 max-sm:hidden pointer-events-auto'
 				href='https://github.com/isaiahpaget'
 			>
 				Github

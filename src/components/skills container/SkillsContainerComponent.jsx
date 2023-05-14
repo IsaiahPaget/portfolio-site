@@ -7,7 +7,7 @@ function SkillsContainerComponent(props) {
 	return (
 		<ScrollingCardComponent id={"skills"}>
 			<article data-value="skill" className='observer border h-72 w-full card lg:h-96 relative bg-gray-light'>
-				<h3 className=' text-3xl p-4'>
+				<h3 className=' text-3xl p-3'>
 					_SKILLS INCLUDE BUT AREN'T LIMITED TO = () =&gt;
 				</h3>
 			</article>

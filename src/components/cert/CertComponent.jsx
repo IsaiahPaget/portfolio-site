@@ -5,7 +5,7 @@ function CertComponent(props) {
 	return (
 		<article
 			data-value='cert'
-			className='border observer flex flex-col card hidden-before-scroll p-4 w-full lg:h-96 bg-pink'
+			className='border observer flex flex-col card hidden-before-scroll p-3 w-full lg:h-96 bg-pink'
 		>
 			<header className='text-3xl flex-1'>{props.name}</header>
 			<div className='flex flex-1'>

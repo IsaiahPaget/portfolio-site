@@ -10,7 +10,6 @@ import ProjectsContainer from "./components/project container/ProjectsContainer"
 import CertificationComponent from "./components/certication/CertificationComponent";
 import QuoteComponent from "./components/quote/QuoteComponent";
 import ContactComponent from "./components/contact/ContactComponent";
-import ThankYouComponent from "./components/thankyou/ThankYouComponent";
 import { analytics } from "./firebase";
 import { getAnalytics } from "firebase/analytics";
 
@@ -26,8 +25,6 @@ function App() {
 	};
 
 	useEffect(() => {
-		const is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
-		if (is_mobile) alert("Thanks for visiting! Keep in mind that the best experience is on desktop!")
 		cypherEffect();
 		dragScrolling();
 		getAnalytics();

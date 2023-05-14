@@ -55,7 +55,7 @@ function CertificationComponent(props) {
 			</CertComponent>
 			<article
 				data-value='cert'
-				className='border flex flex-col card p-4 w-full lg:h-96 bg-pink hidden-before-scroll'
+				className='border flex flex-col card p-3 w-full lg:h-96 bg-pink hidden-before-scroll'
 			>
 				<header className='text-3xl flex-1'>More in Progress ...</header>
 				<div className='flex justify-end'>

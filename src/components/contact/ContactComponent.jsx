@@ -8,8 +8,8 @@ function ContactComponent(props) {
 	return (
 		<section className='h-full pb-8' id="contact">
 			{!props.submitted ? (
-				<div className='p-8 flex flex-col text-3xl text-pink items-center gap-4'>
-					<div className="flex gap-4 h-8">
+				<div className='p-8 flex flex-col text-3xl text-pink items-center gap-3'>
+					<div className="flex gap-3 h-8">
 						<a href='https://linkedin.com/in/isaiahpaget' aria-label="Linkedin.com" target='_blank'>
 							<i className='fa-brands fa-linkedin duration-500 hover:text-4xl'></i>
 						</a>

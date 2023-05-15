@@ -6,7 +6,7 @@ import ButtonComponent from "../button/ButtonComponent";
 
 function CertificationComponent(props) {
 	return (
-		<ScrollingCardComponent id={"certificates"}>
+		<ScrollingCardComponent>
 			<div
 				data-value='cert'
 				className='observer border border-gray-light card w-full h-72 lg:h-96'

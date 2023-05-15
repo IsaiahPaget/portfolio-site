@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./project.css";
 import ButtonComponent from "../button/ButtonComponent";
 
 function ProjectComponent(props) {
+	useEffect(() => {
+		const article = document.getElementById(props.id);
+		article.addEventListener("mouseenter", function (event) {
+			props.handleChangePhoto(event);
+		});
+	});
 	return (
 		<article
-			onMouseEnter={(e) => props.handleChangePhoto(e)}
 			id={props.id}
 			className='z-10 bg-opacity-0 p-3 lg:p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light project parent group gap-3 lg:gap-8 flex flex-col'
 		>

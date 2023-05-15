@@ -12,7 +12,7 @@ function HeroComponent(props) {
 				<p>
 					Innovative and detail-oriented software engineer based in Canada, with a passion
 					for creating frictionless and interactive applications. I have experience in
-					full-stack development, and proven ability to lead successful projects.
+					full-stack development, and proven ability to lead successful projects. Check me out on LinkedIn! ^
 				</p>
 			</div>
 		</section>

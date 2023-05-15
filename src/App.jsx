@@ -46,6 +46,7 @@ function App() {
 					</h3>
 					<div className='bg-gray-dark'>
 						<QuoteComponent />
+						<h3 id="certificates"className="text-gray-light text-5xl md:text-7xl lg:text-9xl relative z-10 text-center md:right-24 lg:right-44">Certifications</h3>
 						<CertificationComponent />
 					</div>
 					<div className='h-96 pointer-events-none'></div>

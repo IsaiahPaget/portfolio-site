@@ -17,27 +17,38 @@ function HeaderComponent(props) {
 				onClick={scrollToTop}
 				tag='cypher'
 				data-value='Isaiah Paget'
-				className='font-bold mr-auto rounded-sm p-3 border bg-gray-light pointer-events-auto'
+				className='font-bold mr-auto rounded-sm p-3 border bg-gray-light pointer-events-auto crosshair'
 			>
 				Isaiah Paget
+			</a>
+			<a
+				role='button'
+				tag='cypher'
+				data-value='LinkedIn'
+				className='font-bold p-3 pointer-events-auto crosshair'
+				href='https://linkedin.com/in/isaiahpaget'
+				target="_blank"
+			>
+				LinkedIn
+			</a>
+			<a
+				role='button'
+				tag='cypher'
+				data-value='Github'
+				className='font-bold p-3 max-sm:hidden pointer-events-auto crosshair'
+				href='https://github.com/isaiahpaget'
+				target="_blank"
+			>
+				Github
 			</a>
 			<a
 				role='button'
 				onClick={scrollToContact}
 				tag='cypher'
 				data-value='Contact'
-				className='font-bold p-3 pointer-events-auto'
+				className='font-bold p-3  max-sm:hidden pointer-events-auto crosshair'
 			>
 				Contact
-			</a>
-			<a
-				role='button'
-				tag='cypher'
-				data-value='Github'
-				className='font-bold p-3 max-sm:hidden pointer-events-auto'
-				href='https://github.com/isaiahpaget'
-			>
-				Github
 			</a>
 		</nav>
 	);

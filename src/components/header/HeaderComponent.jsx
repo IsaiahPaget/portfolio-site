@@ -1,6 +1,6 @@
 import React from "react";
 
-function HeaderComponent(props) {
+function HeaderComponent() {
 	function scrollToContact() {
 		const contact = document.getElementById("contact");
 		contact.scrollIntoView();
@@ -17,7 +17,7 @@ function HeaderComponent(props) {
 				onClick={scrollToTop}
 				tag='cypher'
 				data-value='Isaiah Paget'
-				className='font-bold mr-auto rounded-sm p-3 border bg-gray-light pointer-events-auto crosshair'
+				className='font-bold mr-auto lg:w-28 p-3 border bg-gray-light pointer-events-auto crosshair'
 			>
 				Isaiah Paget
 			</a>
@@ -25,30 +25,30 @@ function HeaderComponent(props) {
 				role='button'
 				tag='cypher'
 				data-value='LinkedIn'
-				className='font-bold p-3 pointer-events-auto crosshair'
+				className='font-bold p-3 lg:w-20 pointer-events-auto crosshair'
 				href='https://linkedin.com/in/isaiahpaget'
 				target="_blank"
 			>
-				LinkedIn
+				/LinkedIn
 			</a>
 			<a
 				role='button'
 				tag='cypher'
 				data-value='Github'
-				className='font-bold p-3 max-sm:hidden pointer-events-auto crosshair'
+				className='font-bold p-3 lg:w-20 max-sm:hidden pointer-events-auto crosshair'
 				href='https://github.com/isaiahpaget'
 				target="_blank"
 			>
-				Github
+				/Github
 			</a>
 			<a
 				role='button'
 				onClick={scrollToContact}
 				tag='cypher'
 				data-value='Contact'
-				className='font-bold p-3  max-sm:hidden pointer-events-auto crosshair'
+				className='font-bold p-3 lg:w-20 max-sm:hidden pointer-events-auto crosshair'
 			>
-				Contact
+				/Contact
 			</a>
 		</nav>
 	);

@@ -18,11 +18,11 @@ function CertificationComponent(props) {
 				}
 			>
 				<ul>
-					<li>/ Advanced React</li>
-					<li>/ React Basics</li>
-					<li>/ HTML / CSS In Depth</li>
-					<li>/ Principles of UX/UI Design</li>
-					<li>/ Version Control</li>
+					<li>// Advanced React</li>
+					<li>// React Basics</li>
+					<li>// HTML / CSS In Depth</li>
+					<li>// Principles of UX/UI Design</li>
+					<li>// Version Control</li>
 				</ul>
 			</CertComponent>
 			<CertComponent
@@ -32,11 +32,11 @@ function CertificationComponent(props) {
 				}
 			>
 				<ul>
-					<li>/ React and React Native</li>
-					<li>/ Redux</li>
-					<li>/ Node Js and Express Js</li>
-					<li>/ MongoDb</li>
-					<li>/ jQuery</li>
+					<li>// React and React Native</li>
+					<li>// Redux</li>
+					<li>// Node Js and Express Js</li>
+					<li>// MongoDb</li>
+					<li>// jQuery</li>
 				</ul>
 			</CertComponent>
 			<CertComponent
@@ -44,13 +44,13 @@ function CertificationComponent(props) {
 				href={"https://courses.edx.org/certificates/cb3f468bbf5c41c9948495d9a1725c87"}
 			>
 				<ul>
-					<li>/ Algorithms</li>
-					<li>/ Data Structures</li>
-					<li>/ C Programming</li>
-					<li>/ Python</li>
-					<li>/ SQL</li>
-					<li>/ Web Development</li>
-					<li>/ JS, CSS and HTML</li>
+					<li>// Algorithms</li>
+					<li>// Data Structures</li>
+					<li>// C Programming</li>
+					<li>// Python</li>
+					<li>// SQL</li>
+					<li>// Web Development</li>
+					<li>// JS, CSS and HTML</li>
 				</ul>
 			</CertComponent>
 			<article

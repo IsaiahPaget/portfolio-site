@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./projectscontainer.css";
 import ProjectComponent from "../project/ProjectComponent";
 
-function ProjectsContainer(props) {
+function ProjectsContainer() {
 	const [source, setSource] = useState(null);
 	const [hidden, setHidden] = useState(true);
 
@@ -33,10 +33,11 @@ function ProjectsContainer(props) {
 			>
 				<img
 					id='project_img'
-					className={`price absolute aspect-video object-cover object-top h-full ${
+					className={`absolute object-cover object-top h-full w-full ${
 						hidden ? "hidden" : null
 					}`}
 					src={source}
+					loading="lazy"
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
@@ -45,26 +46,23 @@ function ProjectsContainer(props) {
 					route={"https://github.com/IsaiahPaget/Wizard-Bumgeon"}
 					title={"First Title from my indie game studio!"}
 				>
-					<p>/Unity</p>
-					<p>/C#</p>
-					<p>/Object/Oriented Programming</p>
-					<p>/SOLID code principles</p>
-					<p>/Git</p>
-					<p>/Collaboration</p>
+					<p>// Unity</p>
+					<p>// C#</p>
+					<p>// Object/Oriented Programming</p>
+					<p>// SOLID code principles</p>
+					<p>// Git</p>
+					<p>// Collaboration</p>
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"_Price Compass"}
-					id={"/images/pricecompasspage.png"}
-					route={"https://pricecompass.one"}
-					title={"Full-stack web app that tracks prices on Google Shopping!"}
+					project={"_Hack Assembler"}
+					id={"/images/hackassembler.png"}
+					route={"https://github.com/isaiahpaget/hackassembler"}
+					title={"An assembler built to transpose the Hack assembly language into binary instructions that a 16 bit computer can run. This was my final project for the first course in Nand2Tetris, where I built a whole 16 bit computer from the ground up!"}
 				>
-					<p>/React</p>
-					<p>/OpenAI GPT-3 API</p>
-					<p>/Cloud Functions</p>
-					<p>/Authentication</p>
-					<p>/Web Security</p>
-					<p>/Data Modeling</p>
+					<p>// C</p>
+					<p>// Assembly</p>
+					<p>// Linux</p>
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
@@ -75,12 +73,12 @@ function ProjectsContainer(props) {
 						"E-commerce website allowing Bachelor Suite Skateboards to reach new customers!"
 					}
 				>
-					<p>/UX/UI Design</p>
-					<p>/Easy To Use Back End</p>
-					<p>/Customer Satisfaction</p>
-					<p>/Replicating Figma Designs</p>
-					<p>/Web Security</p>
-					<p>/Google Anayltics</p>
+					<p>// UX/UI Design</p>
+					<p>// Easy To Use Back End</p>
+					<p>// Customer Satisfaction</p>
+					<p>// Replicating Figma Designs</p>
+					<p>// Web Security</p>
+					<p>// Google Anayltics</p>
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
@@ -89,12 +87,12 @@ function ProjectsContainer(props) {
 					route={"https://arcliquorkelowna.web.app"}
 					title={"Front-End project, I learned a whole lot about React and Firebase!"}
 				>
-					<p>/React</p>
-					<p>/Sass</p>
-					<p>/Boot Strap</p>
-					<p>/UX/UI Design</p>
-					<p>/Security</p>
-					<p>/Firebase</p>
+					<p>// React</p>
+					<p>// Sass</p>
+					<p>// Boot Strap</p>
+					<p>// UX/UI Design</p>
+					<p>// Security</p>
+					<p>// Firebase</p>
 				</ProjectComponent>
 				<div className='z-10 bg-opacity-0 max-lg:hidden p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
 				<div className='z-10 bg-opacity-0 max-lg:hidden p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>

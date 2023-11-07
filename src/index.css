@@ -23,6 +23,10 @@ html {
 .scroll * :not(a, button) {
 	cursor: url("/images/crosshair_grab.png") 32 32, auto;
 }
+.link-text {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+}
 
 a,
 button,

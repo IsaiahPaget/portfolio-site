@@ -11,7 +11,7 @@ function SkillComponent({ skill, children, image, alt }) {
 			<div className='flex-1 md:flex'>
 				<div className="flex-1">{children}</div>
 				<div className="flex flex-1 justify-center md:justify-end md:items-end">
-					<img className='aspect-square max-h-36' alt={alt} src={image} />
+					<img className='aspect-square max-h-36' alt={alt} src={image} loading="lazy" />
 				</div>
 			</div>
 		</article>

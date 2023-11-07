@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import ButtonComponent from "../button/ButtonComponent";
 
-function FooterComponent(props) {
+function FooterComponent() {
 	function scrollToSkills() {
 		const skills = document.getElementById("skills");
 		skills.scrollIntoView()

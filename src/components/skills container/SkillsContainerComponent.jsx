@@ -17,13 +17,13 @@ function SkillsContainerComponent(props) {
 				image={"/images/front-end.gif"}
 			>
 				<ul>
-					<li>/ React & React Native</li>
-					<li>/ JavaScript</li>
-					<li>/ TypeScript</li>
-					<li>/ HTML5</li>
-					<li>/ CSS</li>
-					<li>/ Redux</li>
-					<li>/ Figma</li>
+					<li>// React & React Native</li>
+					<li>// JavaScript</li>
+					<li>// TypeScript</li>
+					<li>// HTML5</li>
+					<li>// CSS</li>
+					<li>// Redux</li>
+					<li>// Figma</li>
 				</ul>
 			</SkillComponent>
 			<SkillComponent
@@ -32,13 +32,13 @@ function SkillsContainerComponent(props) {
 				image={"/images/back-end.gif"}
 			>
 				<ul>
-					<li>/ Node Js</li>
-					<li>/ Express Js</li>
-					<li>/ Python</li>
-					<li>/ Flask</li>
-					<li>/ SQL</li>
-					<li>/ MongDb</li>
-					<li>/ Google Cloud Platforms</li>
+					<li>// Node Js</li>
+					<li>// Express Js</li>
+					<li>// Python</li>
+					<li>// Flask</li>
+					<li>// SQL</li>
+					<li>// MongDb</li>
+					<li>// Google Cloud Platforms</li>
 				</ul>
 			</SkillComponent>
 			<SkillComponent
@@ -47,13 +47,13 @@ function SkillsContainerComponent(props) {
 				image={"/images/UXUI.gif"}
 			>
 				<ul>
-					<li>/ Emphasis</li>
-					<li>/ Balance and Alignment</li>
-					<li>/ Contrast</li>
-					<li>/ Repetition</li>
-					<li>/ Proportion</li>
-					<li>/ Movement</li>
-					<li>/ White Space</li>
+					<li>// Emphasis</li>
+					<li>// Balance and Alignment</li>
+					<li>// Contrast</li>
+					<li>// Repetition</li>
+					<li>// Proportion</li>
+					<li>// Movement</li>
+					<li>// White Space</li>
 				</ul>
 			</SkillComponent>
 			<SkillComponent
@@ -62,13 +62,13 @@ function SkillsContainerComponent(props) {
 				image={"/images/gamedev.gif"}
 			>
 				<ul>
-					<li>/ Unity</li>
-					<li>/ C#</li>
-					<li>/ GIMP</li>
-					<li>/ Reaper Audio</li>
-					<li>/ Game Design</li>
-					<li>/ Object Oriented Code</li>
-					<li>/ SOLID Principles</li>
+					<li>// Unity</li>
+					<li>// C#</li>
+					<li>// GIMP</li>
+					<li>// Reaper Audio</li>
+					<li>// Game Design</li>
+					<li>// Object Oriented Code</li>
+					<li>// SOLID Principles</li>
 				</ul>
 			</SkillComponent>
 		</ScrollingCardComponent>

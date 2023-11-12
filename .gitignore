@@ -7,8 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-portfolio-site-fdd81-firebase-adminsdk-kvca6-bc8e4665ef.json
-
 node_modules
 dist
 dist-ssr

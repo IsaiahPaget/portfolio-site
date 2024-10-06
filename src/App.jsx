@@ -10,11 +10,8 @@ import ProjectsContainer from "./components/project container/ProjectsContainer"
 import CertificationComponent from "./components/certication/CertificationComponent";
 import QuoteComponent from "./components/quote/QuoteComponent";
 import ContactComponent from "./components/contact/ContactComponent";
-import { analytics } from "./firebase";
-import { getAnalytics } from "firebase/analytics";
 
 function App() {
-	analytics;
 
 	const [contactMessage, setContactMessage] = useState("Contact Me!");
 	const [submitted, setSubmitted] = useState(false);
@@ -27,7 +24,6 @@ function App() {
 	useEffect(() => {
 		cypherEffect();
 		dragScrolling();
-		getAnalytics();
 		observer();
 
 	}, []);
@@ -46,7 +42,7 @@ function App() {
 					</h3>
 					<div className='bg-gray-dark'>
 						<QuoteComponent />
-						<h3 id="certificates"className="text-gray-light text-5xl md:text-7xl lg:text-9xl relative z-10 text-center md:right-24 lg:right-44">Certifications</h3>
+						<h3 id="certificates" className="text-gray-light text-5xl md:text-7xl lg:text-9xl relative z-10 text-center md:right-24 lg:right-44">Certifications</h3>
 						<CertificationComponent />
 					</div>
 					<div className='h-96 pointer-events-none'></div>

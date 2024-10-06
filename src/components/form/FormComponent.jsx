@@ -1,5 +1,4 @@
 import React from "react";
-import { sendEmail } from "../../firebase";
 
 function FormComponent(props) {
 	return (

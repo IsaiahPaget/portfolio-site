@@ -5,7 +5,7 @@ function CharactersComponent() {
 		<div className="my-40 lg:mb-40">
 			<div className='flex justify-center p-8'>
 				<div className='relative gap-8 md:left-32 lg:left-44 '>
-					<img alt="Wizard Character" className=' aspect-square md:h-72' src='/portfolio-site/images/wizard.gif' loading="lazy" />
+					<img alt="Wizard Character" className=' aspect-square md:h-72' src='/images/wizard.gif' loading="lazy" />
 				</div>
 			</div>
 			<div className="p-8 mb-14 flex justify-center">

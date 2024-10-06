@@ -41,7 +41,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Wizard Dungeon"}
-					id={"/portfolio-site/images/wizardbumgeon.jpg"}
+					id={"/images/wizardbumgeon.jpg"}
 					route={"https://github.com/IsaiahPaget/Wizard-Bumgeon"}
 					title={"First Title from my indie game studio!"}
 				>
@@ -55,7 +55,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Hack Assembler"}
-					id={"/portfolio-site/images/hackassembler.jpg"}
+					id={"/images/hackassembler.jpg"}
 					route={"https://github.com/isaiahpaget/hackassembler"}
 					title={"An assembler built to transpose the Hack assembly language into binary instructions that a 16 bit computer can run."}
 				>
@@ -66,7 +66,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Bachelor Suite Skateboards"}
-					id={"/portfolio-site/images/bachelorsuitepage.jpg"}
+					id={"/images/bachelorsuitepage.jpg"}
 					route={"https://bachelorsuitestore.com"}
 					title={
 						"E-commerce website allowing Bachelor Suite Skateboards to reach new customers!"
@@ -82,7 +82,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Arc Liquor Store"}
-					id={"/portfolio-site/images/arcliquorpage.jpg"}
+					id={"/images/arcliquorpage.jpg"}
 					route={"https://arcliquorkelowna.web.app"}
 					title={"Front-End project, I learned a whole lot about React and Firebase!"}
 				>

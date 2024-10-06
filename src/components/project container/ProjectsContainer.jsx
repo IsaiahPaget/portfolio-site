@@ -33,16 +33,15 @@ function ProjectsContainer() {
 			>
 				<img
 					id='project_img'
-					className={`absolute object-cover object-top h-full w-full ${
-						hidden ? "hidden" : null
-					}`}
+					className={`absolute object-cover object-top h-full w-full ${hidden ? "hidden" : null
+						}`}
 					src={source}
 					loading="lazy"
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Wizard Dungeon"}
-					id={"/images/wizardbumgeon.jpg"}
+					id={"/portfolio-site/images/wizardbumgeon.jpg"}
 					route={"https://github.com/IsaiahPaget/Wizard-Bumgeon"}
 					title={"First Title from my indie game studio!"}
 				>
@@ -56,7 +55,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Hack Assembler"}
-					id={"/images/hackassembler.jpg"}
+					id={"/portfolio-site/images/hackassembler.jpg"}
 					route={"https://github.com/isaiahpaget/hackassembler"}
 					title={"An assembler built to transpose the Hack assembly language into binary instructions that a 16 bit computer can run."}
 				>
@@ -67,7 +66,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Bachelor Suite Skateboards"}
-					id={"/images/bachelorsuitepage.jpg"}
+					id={"/portfolio-site/images/bachelorsuitepage.jpg"}
 					route={"https://bachelorsuitestore.com"}
 					title={
 						"E-commerce website allowing Bachelor Suite Skateboards to reach new customers!"
@@ -83,7 +82,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Arc Liquor Store"}
-					id={"/images/arcliquorpage.jpg"}
+					id={"/portfolio-site/images/arcliquorpage.jpg"}
 					route={"https://arcliquorkelowna.web.app"}
 					title={"Front-End project, I learned a whole lot about React and Firebase!"}
 				>

@@ -21,7 +21,7 @@ function ContactComponent(props) {
 				</div>
 			) : (
 				<div className='p-10 mt-32 flex lg:flex-row flex-col justify-center items-center'>
-					<img className='h-72' alt='UX/UI' src='/images/UXUI.gif' />
+					<img className='h-72' alt='UX/UI' src='/portfolio-site/images/UXUI.gif' />
 				</div>
 			)}
 		</section>

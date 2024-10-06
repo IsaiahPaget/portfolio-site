@@ -14,7 +14,7 @@ function SkillsContainerComponent(props) {
 			<SkillComponent
 				skill={"Front-End Development"}
 				alt={"Computer Screen"}
-				image={"/images/front-end.gif"}
+				image={"/portfolio-site/images/front-end.gif"}
 			>
 				<ul>
 					<li>// React & React Native</li>
@@ -29,7 +29,7 @@ function SkillsContainerComponent(props) {
 			<SkillComponent
 				skill={"Back-End Development"}
 				alt={"Server"}
-				image={"/images/back-end.gif"}
+				image={"/portfolio-site/images/back-end.gif"}
 			>
 				<ul>
 					<li>// Node Js</li>
@@ -44,7 +44,7 @@ function SkillsContainerComponent(props) {
 			<SkillComponent
 				skill={"UX/UI Design"}
 				alt={"Squares Over lapping"}
-				image={"/images/UXUI.gif"}
+				image={"/portfolio-site/images/UXUI.gif"}
 			>
 				<ul>
 					<li>// Emphasis</li>
@@ -59,7 +59,7 @@ function SkillsContainerComponent(props) {
 			<SkillComponent
 				skill={"Game Development"}
 				alt={"Walking Droid"}
-				image={"/images/gamedev.gif"}
+				image={"/portfolio-site/images/gamedev.gif"}
 			>
 				<ul>
 					<li>// Unity</li>

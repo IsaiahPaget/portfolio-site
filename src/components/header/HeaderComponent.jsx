@@ -16,10 +16,10 @@ function HeaderComponent() {
 				role='button'
 				onClick={scrollToTop}
 				tag='cypher'
-				data-value='/Isaiah Paget'
+				data-value='/Go to top'
 				className='font-bold mr-auto lg:w-28 p-3 border bg-gray-light pointer-events-auto crosshair'
 			>
-				Isaiah Paget
+				/Isaiah Paget
 			</a>
 			<a
 				role='button'

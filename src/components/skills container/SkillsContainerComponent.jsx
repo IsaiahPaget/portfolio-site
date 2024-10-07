@@ -17,12 +17,11 @@ function SkillsContainerComponent(props) {
 				image={"/images/front-end.gif"}
 			>
 				<ul>
-					<li>// React & React Native</li>
-					<li>// JavaScript</li>
+					<li>// React & Vue</li>
 					<li>// TypeScript</li>
 					<li>// HTML5</li>
 					<li>// CSS</li>
-					<li>// Redux</li>
+					<li>// Redux & Pinia</li>
 					<li>// Figma</li>
 				</ul>
 			</SkillComponent>
@@ -32,13 +31,13 @@ function SkillsContainerComponent(props) {
 				image={"/images/back-end.gif"}
 			>
 				<ul>
-					<li>// Node Js</li>
-					<li>// Express Js</li>
-					<li>// Python</li>
-					<li>// Flask</li>
-					<li>// SQL</li>
-					<li>// MongDb</li>
-					<li>// Google Cloud Platforms</li>
+					<li>// .NET C#</li>
+					<li>// Node</li>
+					<li>// Postgres SQL</li>
+					<li>// MSSQL</li>
+					<li>// CI/CD</li>
+					<li>// Docker</li>
+					<li>// GCP</li>
 				</ul>
 			</SkillComponent>
 			<SkillComponent
@@ -63,12 +62,11 @@ function SkillsContainerComponent(props) {
 			>
 				<ul>
 					<li>// Unity</li>
-					<li>// C#</li>
+					<li>// Godot</li>
+					<li>// Pygame</li>
+					<li>// Odin + Raylib</li>
+					<li>// SOLID</li>
 					<li>// GIMP</li>
-					<li>// Reaper Audio</li>
-					<li>// Game Design</li>
-					<li>// Object Oriented Code</li>
-					<li>// SOLID Principles</li>
 				</ul>
 			</SkillComponent>
 		</ScrollingCardComponent>

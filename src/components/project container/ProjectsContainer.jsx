@@ -40,24 +40,36 @@ function ProjectsContainer() {
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"_Wizard Dungeon"}
-					id={"/images/wizardbumgeon.jpg"}
-					route={"https://github.com/IsaiahPaget/Wizard-Bumgeon"}
-					title={"First Title from my indie game studio!"}
+					project={"Password_Manager"}
+					id={"/images/PasswordManagerShowcase.jpg"}
+					route={"https://github.com/IsaiahPaget/PasswordManager"}
+					title={"A self hostable password manager made with .NET and Vue"}
 				>
-					<p>// Unity</p>
-					<p>// C#</p>
-					<p>// Object/Oriented Programming</p>
-					<p>// SOLID code principles</p>
-					<p>// Git</p>
-					<p>// Collaboration</p>
+					<p>// Multiple accounts for friends and family</p>
+					<p>// Client side encryption</p>
+					<p>// Light and dark mode</p>
+					<p>// Mobile first design</p>
+					<p>// Auto generate secure passwords</p>
+					<p>// Import/Export passwords from CSV</p>
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"_Hack Assembler"}
+					project={"Tron_Agent"}
+					id={"/images/tronagent.jpg"}
+					route={"https://github.com/isaiahpaget/tronagent"}
+					title={"Game of Tron where one player is controlled by a Deep QNet model and the other is procedural"}
+				>
+					<p>// Pygame</p>
+					<p>// Machine Learning</p>
+					<p>// Deep QNet</p>
+					<p>// Simulation</p>
+				</ProjectComponent>
+				<ProjectComponent
+					handleChangePhoto={handleChangePhoto}
+					project={"Hack_Assembler"}
 					id={"/images/hackassembler.jpg"}
 					route={"https://github.com/isaiahpaget/hackassembler"}
-					title={"An assembler built to transpose the Hack assembly language into binary instructions that a 16 bit computer can run."}
+					title={"An assembler built to transpose the Hack assembly language into binary instructions that a 16 bit computer can run"}
 				>
 					<p>// C</p>
 					<p>// Assembly</p>
@@ -65,36 +77,43 @@ function ProjectsContainer() {
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"_Bachelor Suite Skateboards"}
-					id={"/images/bachelorsuitepage.jpg"}
-					route={"https://bachelorsuitestore.com"}
+					project={"Save_Pompeii"}
+					id={"/images/savepompeii.jpg"}
+					route={"https://isaiahpaget.itch.io/savepompeii"}
 					title={
-						"E-commerce website allowing Bachelor Suite Skateboards to reach new customers!"
+						"Submission for the Brackeys 2024 game jam! Convince the village that the volcano is about to erupt"
 					}
 				>
-					<p>// UX/UI Design</p>
-					<p>// Easy To Use Back End</p>
-					<p>// Customer Satisfaction</p>
-					<p>// Replicating Figma Designs</p>
-					<p>// Web Security</p>
-					<p>// Google Anayltics</p>
+					<p>// Godot</p>
+					<p>// OOP</p>
+					<p>// Strategy</p>
+					<p>// Web based</p>
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"_Arc Liquor Store"}
-					id={"/images/arcliquorpage.jpg"}
-					route={"https://arcliquorkelowna.web.app"}
-					title={"Front-End project, I learned a whole lot about React and Firebase!"}
+					project={"Strong_Towns_Kelowna"}
+					id={"/images/strongtownskelowna.jpeg"}
+					route={"https://strongtownskelowna.org"}
+					title={"I am the founder of a 'local chapter' of Strong Towns, an organization advocating for livable and financially resilient communities, where people, not cars, are prioritized"}
 				>
-					<p>// React</p>
-					<p>// Sass</p>
-					<p>// Boot Strap</p>
-					<p>// UX/UI Design</p>
-					<p>// Security</p>
-					<p>// Firebase</p>
+					<p>// Wordpress</p>
+					<p>// PHP</p>
+					<p>// HTML, CSS, and JavaScript</p>
+					<p>// Community activisim</p>
 				</ProjectComponent>
-				<div className='z-10 bg-opacity-0 max-lg:hidden p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
-				<div className='z-10 bg-opacity-0 max-lg:hidden p-8 duration-500 hover:bg-gray-light hover:text-gray-dark border border-gray-light h-96'></div>
+				<ProjectComponent
+					handleChangePhoto={handleChangePhoto}
+					project={".dotfiles"}
+					id={"/images/dotfiles.jpg"}
+					route={"https://github.com/isaiahpaget/dotfiles"}
+					title={"Where I keep all my configuration because my install always breaks"}
+				>
+					<p>// Neovim</p>
+					<p>// Kitty</p>
+					<p>// zsh</p>
+					<p>// i3</p>
+					<p>// Install script</p>
+				</ProjectComponent>
 			</section>
 		</div>
 	);

@@ -16,6 +16,7 @@ function FormComponent(props) {
 				},
 			).catch(e => {
 				console.error(e)
+				alert("An error has occured with the contact form, try again or email directly")
 			})
 	};
 

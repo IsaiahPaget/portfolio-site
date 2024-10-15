@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser"
+
 
 function FormComponent(props) {
+	const form = useRef();
+	const sendEmail = (e) => {
+		e.preventDefault();
+		emailjs
+			.sendForm(import.meta.env.VITE_MAIL_SERVICE_ID, import.meta.env.VITE_MAIL_TEMPLATE_ID, form.current, {
+				publicKey: import.meta.env.VITE_MAIL_PUBLIC_KEY,
+			})
+			.then(
+				() => {
+					console.log('EMAIL SUCCESS!');
+				},
+			).catch(e => {
+				console.error(e)
+			})
+	};
+
 	return (
 		<form
+			ref={form}
 			onSubmit={(e) => {
-				e.preventDefault();
-				props.handleSubmit();
 				sendEmail(e)
+				props.handleSubmit();
 			}}
 			className='lg:w-1/2 w-full text-xl text-blue flex flex-col gap-8 lg:p-3'
 		>
@@ -22,6 +40,7 @@ function FormComponent(props) {
 				className='bg-gray-dark p-3'
 				placeholder='/email'
 				id='email'
+				name='from_name'
 				required={true}
 			></input>
 			<textarea
@@ -30,6 +49,7 @@ function FormComponent(props) {
 				className='bg-gray-dark p-3'
 				placeholder='/message'
 				id='message'
+				name='message'
 				required={true}
 			></textarea>
 			<div className='flex justify-end'>

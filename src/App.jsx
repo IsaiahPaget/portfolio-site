@@ -37,7 +37,7 @@ function App() {
 				<SkillsContainerComponent />
 				<ProjectsContainer />
 				<div className="background-solid-gadient">
-					<h3 className='sticky top-80 pointer-events-none text-center text-6xl md:text-9xl'>
+					<h3 className='sticky top-96 pointer-events-none text-center text-6xl md:text-9xl'>
 						{contactMessage}
 					</h3>
 					<div className='bg-gray-dark'>

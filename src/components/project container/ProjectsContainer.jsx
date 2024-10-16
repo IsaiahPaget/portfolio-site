@@ -20,11 +20,69 @@ function ProjectsContainer() {
 
 	return (
 		<div className=' bg-gray-dark -z-20 mt-44'>
-			<div className='flex border  border-gray-light overflow-hidden'>
-				<h3 className='rotate text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-					PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS
-					PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS
-				</h3>
+			<div className='scroll-banner-container border-gray-light'>
+				<div class='scroll'>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
+						PROJECTS
+					</h3>
+				</div>
 			</div>
 			<section
 				id='projects'
@@ -40,7 +98,7 @@ function ProjectsContainer() {
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"Password_Manager"}
+					project={"_Password Manager"}
 					id={"/images/PasswordManagerShowcase.jpg"}
 					route={"https://github.com/IsaiahPaget/PasswordManager"}
 					title={"A self hostable password manager made with .NET and Vue"}
@@ -54,7 +112,7 @@ function ProjectsContainer() {
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"Tron_Agent"}
+					project={"_Tron Agent"}
 					id={"/images/tronagent.jpg"}
 					route={"https://github.com/isaiahpaget/tronagent"}
 					title={"Game of Tron where one player is controlled by a Deep QNet model and the other is procedural"}
@@ -66,7 +124,7 @@ function ProjectsContainer() {
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"Hack_Assembler"}
+					project={"_Hack Assembler"}
 					id={"/images/hackassembler.jpg"}
 					route={"https://github.com/isaiahpaget/hackassembler"}
 					title={"An assembler built to transpose the Hack assembly language into binary instructions that a 16 bit computer can run"}
@@ -77,7 +135,7 @@ function ProjectsContainer() {
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"Save_Pompeii"}
+					project={"_Save Pompeii"}
 					id={"/images/savepompeii.jpg"}
 					route={"https://isaiahpaget.itch.io/savepompeii"}
 					title={
@@ -91,7 +149,7 @@ function ProjectsContainer() {
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"Strong_Towns_Kelowna"}
+					project={"_Strong Towns Kelowna"}
 					id={"/images/strongtownskelowna.jpeg"}
 					route={"https://strongtownskelowna.org"}
 					title={"I am the founder of a 'local chapter' of Strong Towns, an organization advocating for livable and financially resilient communities, where people, not cars, are prioritized"}
@@ -103,7 +161,7 @@ function ProjectsContainer() {
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={".dotfiles"}
+					project={"_Dotfiles"}
 					id={"/images/dotfiles.jpg"}
 					route={"https://github.com/isaiahpaget/dotfiles"}
 					title={"Where I keep all my configuration because my install always breaks"}

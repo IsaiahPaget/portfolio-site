@@ -1,14 +1,17 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser"
 
+const VITE_MAIL_PUBLIC_KEY = 'JFLA-AbqF3hf0EBYC'
+const VITE_MAIL_TEMPLATE_ID = 'template_56r39jf'
+const VITE_MAIL_SERVICE_ID = 'service_fzcn58e'
 
 function FormComponent(props) {
 	const form = useRef();
 	const sendEmail = (e) => {
 		e.preventDefault();
 		emailjs
-			.sendForm(import.meta.env.VITE_MAIL_SERVICE_ID, import.meta.env.VITE_MAIL_TEMPLATE_ID, form.current, {
-				publicKey: import.meta.env.VITE_MAIL_PUBLIC_KEY,
+			.sendForm(VITE_MAIL_SERVICE_ID, VITE_MAIL_TEMPLATE_ID, form.current, {
+				publicKey: VITE_MAIL_PUBLIC_KEY,
 			})
 			.then(
 				() => {

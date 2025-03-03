@@ -21,8 +21,8 @@ function SkillsContainerComponent(props) {
 					<li>// TypeScript</li>
 					<li>// HTML5</li>
 					<li>// CSS</li>
+					<li>// Tailwind</li>
 					<li>// Redux & Pinia</li>
-					<li>// Figma</li>
 				</ul>
 			</SkillComponent>
 			<SkillComponent
@@ -31,13 +31,12 @@ function SkillsContainerComponent(props) {
 				image={"/images/back-end.gif"}
 			>
 				<ul>
+					<li>// Laravel PHP</li>
 					<li>// .NET C#</li>
 					<li>// Node</li>
-					<li>// Postgres SQL</li>
-					<li>// MSSQL</li>
-					<li>// CI/CD</li>
+					<li>// SQL Databases</li>
 					<li>// Docker</li>
-					<li>// GCP</li>
+					<li className="whitespace-nowrap">// Object Oriented Programming</li>
 				</ul>
 			</SkillComponent>
 			<SkillComponent
@@ -46,13 +45,10 @@ function SkillsContainerComponent(props) {
 				image={"/images/UXUI.gif"}
 			>
 				<ul>
-					<li>// Emphasis</li>
-					<li>// Balance and Alignment</li>
-					<li>// Contrast</li>
-					<li>// Repetition</li>
-					<li>// Proportion</li>
-					<li>// Movement</li>
-					<li>// White Space</li>
+					<li>// Figma</li>
+					<li className="whitespace-nowrap">// Ripping off Awwwards sites</li>
+					<li>// Adobe colour wheel</li>
+					<li>// CSS tricks</li>
 				</ul>
 			</SkillComponent>
 			<SkillComponent
@@ -61,11 +57,11 @@ function SkillsContainerComponent(props) {
 				image={"/images/gamedev.gif"}
 			>
 				<ul>
-					<li>// Unity</li>
 					<li>// Godot</li>
+					<li>// Raylib</li>
+					<li>// Unity</li>
 					<li>// Pygame</li>
-					<li>// Odin + Raylib</li>
-					<li>// SOLID</li>
+					<li>// Odin</li>
 					<li>// GIMP</li>
 				</ul>
 			</SkillComponent>

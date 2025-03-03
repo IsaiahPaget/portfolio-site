@@ -22,66 +22,14 @@ function ProjectsContainer() {
 		<div className=' bg-gray-dark -z-20 mt-44'>
 			<div className='scroll-banner-container border-gray-light'>
 				<div class='scroll'>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
-					<h3 className='item text-gray-light text-6xl lg:text-9xl whitespace-nowrap'>
-						PROJECTS
-					</h3>
+					{[...Array(20)].map((_, index) => (
+						<h3
+							key={index}
+							className="item text-gray-light text-6xl lg:text-9xl whitespace-nowrap"
+						>
+							PROJECTS
+						</h3>
+					))}
 				</div>
 			</div>
 			<section
@@ -98,8 +46,48 @@ function ProjectsContainer() {
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
+					project={"_Protein Powered"}
+					id={"/images/ProteinPowered.webp"}
+					route={"https://proteinpowered-tst.byteheadsoftware.com/"}
+					title={"Protein Powered, E-commerce store with back office capabilities"}
+				>
+					<p>// Mobile first design</p>
+					<p>// Stripe integration</p>
+					<p>// Back office management</p>
+					<p>// Email campaign capabilities</p>
+					<p>// Rich text blogging </p>
+					<p>// Dynamic content</p>
+				</ProjectComponent>
+				<ProjectComponent
+					handleChangePhoto={handleChangePhoto}
+					project={"_Strong Towns Kelowna"}
+					id={"/images/strongtownskelowna.webp"}
+					route={"https://strongtownskelowna.org"}
+					title={"I am the founder of a 'local chapter' of Strong Towns, an organization advocating for livable and financially resilient communities, where people, not cars, are prioritized"}
+				>
+					<p>// Ruby on Rails</p>
+					<p>// Event calendar</p>
+					<p>// HTML, CSS, and JavaScript</p>
+					<p>// Community activisim</p>
+					<p>// Rich text blogging</p>
+				</ProjectComponent>
+				<ProjectComponent
+					handleChangePhoto={handleChangePhoto}
+					project={"_Gumballistic"}
+					id={"/images/gumballistic.webp"}
+					route={"https://isaiahpaget.itch.io/gumballistic"}
+					title={"A FPS game made in under 48 hours using Godot"}
+				>
+					<p>// First person shooter</p>
+					<p>// COD Zombies style gameplay</p>
+					<p>// Mix of 2D and 3D art</p>
+					<p>// Okanagan Game Developers Association</p>
+					<p>// 48 hour halloween game jam</p>
+				</ProjectComponent>
+				<ProjectComponent
+					handleChangePhoto={handleChangePhoto}
 					project={"_Password Manager"}
-					id={"/images/PasswordManagerShowcase.jpg"}
+					id={"/images/PasswordManagerShowcase.webp"}
 					route={"https://github.com/IsaiahPaget/PasswordManager"}
 					title={"A self hostable password manager made with .NET and Vue"}
 				>
@@ -113,7 +101,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Tron Agent"}
-					id={"/images/tronagent.jpg"}
+					id={"/images/tronagent.webp"}
 					route={"https://github.com/isaiahpaget/tronagent"}
 					title={"Game of Tron where one player is controlled by a Deep QNet model and the other is procedural"}
 				>
@@ -125,7 +113,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Hack Assembler"}
-					id={"/images/hackassembler.jpg"}
+					id={"/images/hackassembler.webp"}
 					route={"https://github.com/isaiahpaget/hackassembler"}
 					title={"An assembler built to transpose the Hack assembly language into binary instructions that a 16 bit computer can run"}
 				>
@@ -136,7 +124,7 @@ function ProjectsContainer() {
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
 					project={"_Save Pompeii"}
-					id={"/images/savepompeii.jpg"}
+					id={"/images/savepompeii.webp"}
 					route={"https://isaiahpaget.itch.io/savepompeii"}
 					title={
 						"Submission for the Brackeys 2024 game jam! Convince the village that the volcano is about to erupt"
@@ -149,20 +137,8 @@ function ProjectsContainer() {
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"_Strong Towns Kelowna"}
-					id={"/images/strongtownskelowna.jpeg"}
-					route={"https://strongtownskelowna.org"}
-					title={"I am the founder of a 'local chapter' of Strong Towns, an organization advocating for livable and financially resilient communities, where people, not cars, are prioritized"}
-				>
-					<p>// Wordpress</p>
-					<p>// PHP</p>
-					<p>// HTML, CSS, and JavaScript</p>
-					<p>// Community activisim</p>
-				</ProjectComponent>
-				<ProjectComponent
-					handleChangePhoto={handleChangePhoto}
 					project={"_Dotfiles"}
-					id={"/images/dotfiles.jpg"}
+					id={"/images/dotfiles.webp"}
 					route={"https://github.com/isaiahpaget/dotfiles"}
 					title={"Where I keep all my configuration because my install always breaks"}
 				>

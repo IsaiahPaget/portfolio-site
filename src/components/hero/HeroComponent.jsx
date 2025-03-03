@@ -10,8 +10,8 @@ function HeroComponent() {
 			<div className='flex-1/3'>
 				<h3 className='text-3xl'>_About Me</h3>
 				<p>
-					Software developer based in Canada. At work I use Javascript, HTML/CSS, SQL and OutSystems to build web applications for governments and credit unions all over North America. Some of my daily challenges are: Looking around my cat so I can see the screen, and figuring out why my code isn't working.
-					On the weekends and in my free time I am skateboarding, rock climbing and building projects with tech that excites me. Recently I have been enjoying .NET, Vue and Godot for my personal projects. I also have a keen interest in security and low level programming and like to challenge myself with some low level stuff like C and Odin every once in a while.
+					I’m a software developer based in Canada, passionate about building high-performance web applications and digital experiences. I specialize in JavaScript, HTML/CSS, and SQL, with experience working on large-scale web solutions for governments and financial institutions across North America.
+					On the weekends and in my free time I am skateboarding, rock climbing and building projects with tech that excites me. Recently I have been enjoying Laravel and Vue for web apps as well as Godot and Odin for game jams.
 					Check me out on <span><a className="link-text font-bold text-pink" href="https://linkedin.com/in/isaiahpaget">LinkedIn!</a></span>
 				</p>
 			</div>

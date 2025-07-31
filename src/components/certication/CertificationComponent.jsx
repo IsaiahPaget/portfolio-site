@@ -26,6 +26,19 @@ function CertificationComponent(props) {
 				</ul>
 			</CertComponent>
 			<CertComponent
+				name={"Machine Learning Specialization, Coursera"}
+				href={
+					"https://www.coursera.org/account/accomplishments/specialization/DEBSLVX2F92L"
+				}
+			>
+				<ul>
+					<li>// Python</li>
+					<li>// Linear regression</li>
+					<li>// Multi layer perceptrons</li>
+					<li>// Reinforcement learning</li>
+				</ul>
+			</CertComponent>
+			<CertComponent
 				name={"Full-Stack Developer, Coursera"}
 				href={
 					"https://www.coursera.org/account/accomplishments/specialization/certificate/L7EMVASX5X5J"

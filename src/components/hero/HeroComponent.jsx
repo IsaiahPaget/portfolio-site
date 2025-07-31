@@ -10,8 +10,9 @@ function HeroComponent() {
 			<div className='flex-1/3'>
 				<h3 className='text-3xl'>_About Me</h3>
 				<p>
-					I’m a software developer based in Canada, passionate about building high-performance web applications and digital experiences. I specialize in JavaScript, HTML/CSS, and SQL, with experience working on large-scale web solutions for governments and financial institutions across North America.
-					On the weekends and in my free time I am skateboarding, rock climbing and building projects with tech that excites me. Recently I have been enjoying Laravel and Vue for web apps as well as Godot and Odin for game jams.
+					My name is Isaiah, and I am a software developer based in Canada specializing in building web applications for businesses of all sizes. 
+					I work with industry-standard technologies, including modern JavaScript frameworks such as Vue and React, as well as backend technologies like Laravel and .NET. 
+					I am passionate about programming and actively contribute to the developer community through open-source projects, including Winter CMS.
 					Check me out on <span><a className="link-text font-bold text-pink" href="https://linkedin.com/in/isaiahpaget">LinkedIn!</a></span>
 				</p>
 			</div>

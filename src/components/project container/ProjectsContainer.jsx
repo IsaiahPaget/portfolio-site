@@ -46,17 +46,15 @@ function ProjectsContainer() {
 				/>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
-					project={"_Protein Powered"}
-					id={"/images/ProteinPowered.webp"}
-					route={"https://proteinpowered-tst.byteheadsoftware.com/"}
-					title={"Protein Powered, E-commerce store with back office capabilities"}
+					project={"_Winter CMS"}
+					id={"/images/winterdev.webp"}
+					route={"https://wintercms.com/"}
+					title={"Winter CMS is a content management system for developers built on top of Laravel"}
 				>
-					<p>// Mobile first design</p>
-					<p>// Stripe integration</p>
-					<p>// Back office management</p>
-					<p>// Email campaign capabilities</p>
-					<p>// Rich text blogging </p>
-					<p>// Dynamic content</p>
+					<p>// Intuitive admin panel for managing content</p>
+					<p>// Easily extendable with plugins and themes</p>
+					<p>// Supports both flat-file and database-driven content management</p>
+					<p>// By developers for developers</p>
 				</ProjectComponent>
 				<ProjectComponent
 					handleChangePhoto={handleChangePhoto}
